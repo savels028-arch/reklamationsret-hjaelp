@@ -29,6 +29,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
+    <!-- Analytics: Plausible (outbound-link tracking) -->
+    <script defer data-domain="reklamationsret.dk" src="https://plausible.io/js/script.outbound-links.js"></script>
+
+    <!-- Analytics: Google Analytics 4 -->
+    <!-- TODO: Erstat G-XXXXXXXXXX med dit GA4 Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -115,7 +128,7 @@
     <header>
         <div class="badge">Hjælp &amp; FAQ</div>
         <h1>Hjælp med reklamation<br><span>Hurtige svar på de mest stillede spørgsmål</span></h1>
-        <p class="subtitle">Find svar herunder – eller <a href="https://warrantywallet.dk">lad WarrantyWallet håndtere det for dig</a>.</p>
+        <p class="subtitle">Find svar herunder – eller <a href="https://warrantywallet.dk?utm_source=reklamationsret&utm_medium=referral&utm_campaign=hjaelp&utm_content=subtitle">lad WarrantyWallet håndtere det for dig</a>.</p>
     </header>
 
     <main>
@@ -207,7 +220,7 @@
     <section class="final-cta">
         <h2>Træt af at lede efter svar?</h2>
         <p>WarrantyWallet guider dig gennem hele reklamationsprocessen automatisk. Du behøver ikke vide alt – bare tryk "Reklamer".</p>
-        <a href="https://warrantywallet.dk/auth/opret" class="cta cta-large">Prøv WarrantyWallet gratis →</a>
+        <a href="https://warrantywallet.dk/auth/opret?utm_source=reklamationsret&utm_medium=referral&utm_campaign=hjaelp&utm_content=final-cta" class="cta cta-large">Prøv WarrantyWallet gratis →</a>
         <div class="trust-badges">
             <span>🇩🇰 Dansk virksomhed</span>
             <span>🔒 Sikker opbevaring</span>
@@ -216,7 +229,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 Reklamationsret.dk · En del af <a href="https://warrantywallet.dk">WarrantyWallet</a></p>
+        <p>&copy; 2026 Reklamationsret.dk · En del af <a href="https://warrantywallet.dk?utm_source=reklamationsret&utm_medium=referral&utm_campaign=hjaelp&utm_content=footer">WarrantyWallet</a></p>
         <p class="footer-sources">Kilder: Købeloven · E-handelsloven · Nævnenes Hus · Forbrugerrådet Tænk</p>
     </footer>
 
