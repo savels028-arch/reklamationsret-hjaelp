@@ -32,6 +32,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//plausible.io">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
@@ -164,6 +166,22 @@
           "item": "https://hjaelp.reklamationsret.dk/"
         }
       ]
+    }
+    </script>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Reklamationsret.dk",
+      "url": "https://reklamationsret.dk",
+      "logo": "https://reklamationsret.dk/og-image.png",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "WarrantyWallet",
+        "url": "https://warrantywallet.dk"
+      }
     }
     </script>
 </head>
