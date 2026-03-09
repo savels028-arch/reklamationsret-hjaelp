@@ -6,6 +6,7 @@
     <title>Hjælp med reklamation – FAQ og support | Reklamationsret.dk</title>
     <meta name="description" content="Få svar på dine spørgsmål om reklamation, fortrydelsesret, garanti og klageprocesser i Danmark. Komplet FAQ med hurtige svar.">
     <meta name="keywords" content="reklamation hjælp, reklamation FAQ, fortrydelsesret spørgsmål, garanti spørgsmål, klage hjælp">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://hjaelp.reklamationsret.dk/">
 
     <!-- Open Graph -->
@@ -15,11 +16,16 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Reklamationsret.dk">
     <meta property="og:locale" content="da_DK">
+    <meta property="og:image" content="https://reklamationsret.dk/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Reklamationsret.dk – Hjælp med reklamation">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Hjælp med reklamation – FAQ og support">
     <meta name="twitter:description" content="Svar på spørgsmål om reklamation, fortrydelsesret, garanti og klageprocesser i Danmark.">
+    <meta name="twitter:image" content="https://reklamationsret.dk/og-image.png">
 
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>" type="image/svg+xml">
@@ -52,43 +58,88 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Hvor lang tid tager en reklamationssag?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Det varierer. Butikken bør svare inden 14 dage. En klagesag ved Nævnenes Hus tager typisk 2-3 måneder." }
+          "name": "Hvor lang tid har jeg til at reklamere?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Du har 2 års reklamationsret fra købsdatoen (Købeloven §83). Men du skal reagere inden for rimelig tid efter du opdager fejlen – typisk ca. 2 måneder." }
         },
         {
           "@type": "Question",
-          "name": "Kan butikken kræve at jeg betaler for reparation?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Nej. Inden for reklamationsperioden (2 år) er reparation altid gratis for forbrugeren, hvis fejlen er en mangel." }
+          "name": "Hvad er forskellen på reklamationsret og garanti?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Reklamationsret er lovbestemt og gælder altid i 2 år. Garanti er frivillig og gives af producent eller sælger – den kan dække mere og i længere tid, men erstatter aldrig reklamationsretten." }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan jeg reklamere uden kvittering?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Det er svært, men ikke umuligt. Kontoudtog, ordrebekræftelse via e-mail, eller et vidne kan bruges som alternativ dokumentation. Gem altid kvitteringer digitalt." }
+        },
+        {
+          "@type": "Question",
+          "name": "Gælder reklamationsretten for varer købt på udsalg?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ja! Reklamationsretten gælder uanset om varen er købt på udsalg, tilbud eller til fuld pris. Eneste undtagelse: fejl du blev oplyst om inden købet." }
+        },
+        {
+          "@type": "Question",
+          "name": "Hvor lang tid tager en reklamationssag?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Butikken bør svare inden 14 dage. En reparation tager typisk 1-3 uger. En klagesag ved Nævnenes Hus tager 2-3 måneder." }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan butikken kræve betaling for reparation?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Nej. Inden for reklamationsperioden er reparation altid gratis, hvis fejlen er en mangel. Butikken dækker også eventuelle fragtomkostninger." }
+        },
+        {
+          "@type": "Question",
+          "name": "Må butikken reparere i stedet for at ombytte?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ja, butikken vælger selv mellem reparation og ombytning – men det skal være uden væsentlig ulempe for dig. Hvis de mislykkes med reparationen 2-3 gange, kan du kræve ombytning eller pengene tilbage." }
+        },
+        {
+          "@type": "Question",
+          "name": "Skal butikken give mig en erstatningsvare?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Det er ikke et lovkrav, men mange butikker tilbyder det som god service. Det skader aldrig at spørge – især ved nødvendige produkter som telefoner og hvidevarer." }
+        },
+        {
+          "@type": "Question",
+          "name": "Hvad hvis butikken trækker sagen i langdrag?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Send en skriftlig rykker med en frist (f.eks. 14 dage). Henvis til Købeloven og nævn at du overvejer at klage til Nævnenes Hus. Det får typisk fart på tingene." }
+        },
+        {
+          "@type": "Question",
+          "name": "Hvad gør jeg hvis butikken siger nej?",
+          "acceptedAnswer": { "@type": "Answer", "text": "1) Svar skriftligt og henvis til Købeloven §83. 2) Bed om en skriftlig begrundelse. 3) Kontakt Forbrugerrådet Tænk for rådgivning. 4) Klag til Nævnenes Hus (100 kr.)." }
         },
         {
           "@type": "Question",
           "name": "Hvad koster det at klage til Nævnenes Hus?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Det koster 100 kr. at oprette en klagesag. Beløbet refunderes hvis du får medhold." }
+          "acceptedAnswer": { "@type": "Answer", "text": "100 kr. – og beløbet refunderes hvis du får medhold. Du kan klage online via naevneneshus.dk." }
+        },
+        {
+          "@type": "Question",
+          "name": "Hvor mange får medhold i deres klage?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ca. 73% af forbrugere der klager korrekt, får medhold ved Nævnenes Hus. God dokumentation er nøglen." }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan jeg gå til domstolene?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ja, som sidste udvej. Småsager under 50.000 kr. behandles forenklet ved byretten. Overvej om din forsikring dækker retshjælp." }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan jeg reklamere over en brugt vare?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ja! Men reklamationsperioden kan forkortes til 1 år ved brugt vare, hvis sælger har oplyst det tydeligt ved salget." }
+        },
+        {
+          "@type": "Question",
+          "name": "Gælder reklamationsretten for håndværkerarbejde?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ja, men reglerne er lidt anderledes. Håndværkerarbejde har 5 års reklamationsret (AB 18). Kontakt Håndværkets Ankenævn ved uenighed." }
         },
         {
           "@type": "Question",
           "name": "Kan jeg reklamere hvis jeg selv har ødelagt varen?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Nej. Reklamationsretten dækker kun fejl der stammer fra produktion eller levering, ikke skader du selv har forårsaget." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Nej. Reklamationsretten dækker kun fejl fra produktion eller levering. Skader forårsaget af forkert brug, uheld eller manglende vedligeholdelse er ikke dækket." }
         },
         {
           "@type": "Question",
-          "name": "Gælder reklamationsretten for brugte varer?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Ja, men perioden kan forkortes til 1 år, hvis sælger tydeligt har oplyst det ved salget." }
-        },
-        {
-          "@type": "Question",
-          "name": "Skal butikken give mig en erstatningsvare mens den repareres?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Det er ikke lovkrav, men mange butikker tilbyder det som god service. Du kan altid spørge." }
-        },
-        {
-          "@type": "Question",
-          "name": "Gælder reklamationsretten for digitale produkter?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Ja, siden 2022 er digitalt indhold og digitale tjenester også dækket af reklamationsretten i Danmark. Det gælder software, streaming, apps og spil." }
-        },
-        {
-          "@type": "Question",
-          "name": "Kan sælger tvinge mig til at acceptere et gavekort?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Nej. Du har ret til reparation, ombytning, prisafslag eller refundering. Sælger kan ikke tvinge dig til et gavekort." }
+          "name": "Hvad med digitale produkter og abonnementer?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Siden 2022 er digitalt indhold og digitale tjenester også dækket af reklamationsretten. Software, streaming-tjenester og apps skal fungere som lovet." }
         }
       ]
     }
